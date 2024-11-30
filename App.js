@@ -26,20 +26,6 @@ export default function App() {
   const [WeatherIcon, setWeatherIcon] = useState([])
 
   async function getData() {
-    // const data = await getConsultApi()
-
-    // // Country, City, Hours, Temperature, TemperatureMin, TemperatureMax, TemperatureMorning, TemperatureEvening, TemperatureNight, Rain, Wind
-    // setLocation(data[0] + ', ' + data[1])
-    // setHours(data[2])
-    // setTemperature(data[3])
-    // setTemperatureMin(data[4])
-    // setTemperatureMax(data[5])
-    // setTemperatureMorning(data[6])
-    // setTemperatureEvening(data[7])
-    // setTemperatureNight(data[8])
-    // setRain(data[9])
-    // setHumidity(data[10])
-    // setWeatherIcon(data[11])
     const data = await getConsultApi();
 
     if (data) {
